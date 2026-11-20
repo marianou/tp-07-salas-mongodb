@@ -298,3 +298,5 @@ Revisar datos, configuración y disponibilidad de MongoDB.
 El sitio sigue en memoria porque lee un catálogo de reservas de salas de estudios desde una constante reservas definido en el index.js como un arreglo de objetos.
 Lo que se abordará en la Unidad 8 es el cambio de la fuente de datos del sitio: rutas web y API consultarán el mismo modelo y la misma base de datos.
 
+## Confirmación de que no se publican .env
+* En el historial de Git (terminal): Se ejecuta git log --all --full-history -- "**/.env" para verificar si el archivo existió en algún commit anterior, incluso si luego se borró.
