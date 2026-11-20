@@ -1,0 +1,29 @@
+{
+  "type": "commonjs",
+  "scripts": {
+    "start": "node src/index.js",
+    "start:local": "node --env-file=.env src/index.js",
+    "format": "prettier --write src",
+    "pruebas": "prettier --write src scripts",
+    "pruebas:check": "prettier --check src scripts",
+    "format:check": "prettier --check src",
+    "lint": "eslint src",
+    "lintpruebas": "eslint src script",
+    "check": "npm run format:check && npm run lint",
+    "comprobar": "node --env-file=.env scripts/comprobar-conexion.js",
+    "crear": "node --env-file=.env scripts/crear-reserva.js",
+    "listar": "node --env-file=.env scripts/listar-reservas.js"
+  },
+  "dependencies": {
+    "ejs": "^7.0.2",
+    "express": "^5.3.0",
+    "express-ejs-layouts": "^2.5.1",
+    "mongoose": "^9.12.3",
+    "morgan": "^1.12.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.14.0",
+    "prettier": "^3.9.10"
+  }
+}
